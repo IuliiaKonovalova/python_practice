@@ -68,3 +68,47 @@ for i in range(N-2, -1, -2):
 # Prints "--HELLO--". 
 print("HELLO".center(9, "-"))
 
+
+
+#########################
+##                     ##
+##  String Formatting  ##
+##                     ##
+#########################
+
+
+
+
+def print_formatted(number):
+
+  # Empty list which takes lists of numbers
+  list_of_numbers = []
+
+  # Iteration through the number to create oct, hex, and bin numbers
+  for num in range(1, number+1):
+    decimal_number = str(num)
+    oct_number = str(oct(num))[2:]
+    hex_number = str(hex(num))[2:].upper()
+    bin_number = str(bin(num))[2:]
+
+    # Add list for each combination
+    list_of_numbers.append([decimal_number, oct_number, hex_number, bin_number])
+
+  # Count length of the biggest binary number
+  column_width = len(list_of_numbers[-1][-1]) 
+
+  # Loop through each list in list_of numbers
+  for each_line in list_of_numbers:
+
+    # Loop through each number of the each list and add additional space to the right for each number
+    print(*(each_number.rjust(column_width, '-') for each_number in each_line))
+
+print_formatted(10)
+
+
+
+#########################
+##                     ##
+##  String Formatting  ##
+##                     ##
+#########################
