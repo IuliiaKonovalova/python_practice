@@ -35,3 +35,36 @@ print(d+e)
 # Concatenate and print the String variables on a new line
 # The 's' variable above should be printed first.
 print(s+t)
+
+
+
+#########################
+##                     ##
+##  Designer Door Mat  ##
+##                     ##
+#########################
+
+# N, M = map(int,input().split())
+N = 7
+M = 21
+
+
+# Upper part of the mat
+for i in range(1, N, 2):
+    print((i * ('.|.')).center(M, '-'))
+
+# Middle of the mat
+print("welcome".upper().center(M, '-'))
+
+# Lower part of the mat
+for i in range(N-2, -1, -2):
+    print((i * ('.|.')).center(M, '-'))
+
+
+
+
+
+
+# Prints "--HELLO--". 
+print("HELLO".center(9, "-"))
+
