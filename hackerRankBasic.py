@@ -136,3 +136,16 @@ for i in range(n):
 
 # Print reverse list and list with each line joining by \n
 print('\n'.join(list_of_lines[:0:-1]+list_of_lines))
+
+
+#########################
+##                     ##
+##     Capitalize!     ##
+##                     ##
+#########################
+
+def solve(s):
+    list_of_words = s.split()
+    return ' '.join((word.capitalize() for word in list_of_words))
+
+print(solve('hello world'))
