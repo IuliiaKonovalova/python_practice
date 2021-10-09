@@ -146,6 +146,8 @@ print('\n'.join(list_of_lines[:0:-1]+list_of_lines))
 
 def solve(s):
     list_of_words = s.split()
+    # If we need to preserve spaces between words:
+    # list_of_words = s.split(' ')
     return ' '.join((word.capitalize() for word in list_of_words))
 
-print(solve('hello world'))
+print(solve('hello   123world'))
