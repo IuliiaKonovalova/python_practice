@@ -109,6 +109,30 @@ print_formatted(10)
 
 #########################
 ##                     ##
-##  String Formatting  ##
+##  Alphabet Rangoli   ##
 ##                     ##
 #########################
+
+import string
+alphabet_letters = string.ascii_lowercase
+
+
+n = 5
+
+# Create a list for lines
+list_of_lines = []
+
+# Iterate through the alphabet string
+for i in range(n):
+
+  # Join letters for each half of a line
+  string_of_letters = "-".join(alphabet_letters[i:n])
+
+  # Append each line:
+  # 1. reverse line
+  # 2. initial line without the first index (middle letter)
+  # 3. center elements according to the size
+  list_of_lines.append((string_of_letters[::-1]+string_of_letters[1:]).center(4*n-3, "-"))
+
+# Print reverse list and list with each line joining by \n
+print('\n'.join(list_of_lines[:0:-1]+list_of_lines))
