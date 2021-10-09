@@ -20,3 +20,15 @@ print(d+e)
 # Concatenate and print the String variables on a new line
 # The 's' variable above should be printed first.
 print(s+t)
+
+#  Day 2
+
+
+def solveMeal(meal_cost, tip_percent, tax_percent):
+    # Write your code here
+    
+    total = meal_cost + meal_cost/100*tip_percent + meal_cost/100*tax_percent
+    return round(total)
+
+
+print(solveMeal(100, 15, 8))

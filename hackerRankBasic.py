@@ -151,3 +151,23 @@ def solve(s):
     return ' '.join((word.capitalize() for word in list_of_words))
 
 print(solve('hello   123world'))
+
+
+#########################
+##                     ##
+##   The Minion Game   ##
+##                     ##
+#########################
+
+
+def solveMeal(meal_cost, tip_percent, tax_percent):
+    # Write your code here
+    
+    total = meal_cost + meal_cost/100*tip_percent + meal_cost/100*tax_percent
+    return round(total)
+
+# meal_cost = 100
+# tip_percent = 12
+# tax_percent = 8
+
+print(solveMeal(100, 15, 8))
