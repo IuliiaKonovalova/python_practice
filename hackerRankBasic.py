@@ -328,6 +328,56 @@ for second_lowest_student in second_lowest_students:
     # for student in lowest_students:
     #     print(student)
 
+
+
+
+
+##############################
+##                          ##
+##  Finding the percentage  ##
+##                          ##
+##############################
+
+
+#  Creating dictionary
+
+    # for _ in range(n):
+    #     name, *line = input().split()
+
+    # convert scores string into list
+    #     scores = list(map(float, line))
+    #     student_marks[name] = scores
+    # query_name = input()
+
+student_marks = {}
+student_marks['Krishna'] = [67, 68, 69]
+student_marks['Arjun'] = [70, 98, 63]
+student_marks['Malika'] = [52, 56, 60]
+student_marks['Harsh'] = [25, 26.5, 28]
+student_marks['Anurag'] = [26, 28, 30]
+
+# Geting keys from the dictionary
+values_student_marks = list(student_marks.keys())
+# print(values_student_marks)
+
+# Geting values from the dictionary
+keys_student_marks = list(student_marks.values())
+# print(keys_student_marks)
+
+# Pick a name
+student_name_in_student_marks = 'Anurag'
+
+# Get student's scores
+student_scores = student_marks['Anurag']
+
+# print(student_scores)
+# print(sum(list(student_scores)))
+
+# getting average of the marks, showing 2 places after the decimal.
+print("{0:.2f}".format(sum(student_scores)/(len(student_scores))))
+
+
+
 #########################
 ##                     ##
 ##   Merge the Tools   ##
