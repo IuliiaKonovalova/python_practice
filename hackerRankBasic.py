@@ -214,7 +214,50 @@ print ([[i, j, k] for i  in range(x + 1) for j in range(y + 1) for k in range(z 
 
 
 
+#################################
+##                             ##
+##  Find the Runner-Up Score!  ##
+##                             ##
+#################################
 
+
+
+#  HackerRank i had to put list_runners = arr
+list_runners = [2, 3, 6, 6, 5]
+
+# print(max(list_runners))
+
+
+def runner_up_find(list_runner):
+
+  # define runner_up variable to compare
+  runner_up = 0
+
+  # Iterate through the list to find the runner-up
+  for i in list_runner:
+
+    # Exclude the winners
+    if i == max(list_runner):
+      pass
+
+    else:
+      # Find the runner-up
+      if runner_up < i:
+        runner_up = i
+  return print(runner_up)
+runner_up_find(list_runners)
+
+def runner_up_find2(list_runner):
+  
+    winner = max(list_runner)
+
+    while winner == max(list_runner):
+        list_runner.remove(max(list_runner))
+
+    print(max(list_runner))
+
+
+runner_up_find2(list_runners)
 
 #########################
 ##                     ##
