@@ -32,3 +32,8 @@ def solveMeal(meal_cost, tip_percent, tax_percent):
 
 
 print(solveMeal(100, 15, 8))
+
+# Day 3
+
+N = 5
+print('Weird' if N % 2 != 0 or 6 <= N <= 20 else "Not Weird")
