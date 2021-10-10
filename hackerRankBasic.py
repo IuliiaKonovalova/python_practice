@@ -261,6 +261,75 @@ runner_up_find2(list_runners)
 
 #########################
 ##                     ##
+##     Nested Lists    ##
+##                     ##
+#########################
+
+
+
+students = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
+
+# Create lists for names and scores data
+scores = []
+names = []
+
+# Get the date from the list students
+for name, score in students:
+  scores.append(score)
+  names.append(name)
+
+# Delete possible same scores
+scores = list(set(scores))
+
+# Sort the list 0-...
+scores.sort()
+
+# Get the second lowest score
+second_lowest_score = scores[1]
+
+# Create list for second to last students
+second_lowest_students = []
+
+#Get the name for the lowest scores
+for name, score in students:
+
+  # Check whether there several students with the same scores
+  if score == second_lowest_score:
+
+    # Append name to the scores
+    second_lowest_students.append(name)
+
+# Sort list according to names
+second_lowest_students.sort()
+
+# Get each student with scores
+for second_lowest_student in second_lowest_students:
+  print(second_lowest_student)
+
+
+# For hacker Rank
+
+    # for _ in range(int(input())):
+    #     name = input()
+    #     score = float(input())
+    #     students.append([name, score])
+    #     scores.append(score)
+        
+    # scores = list(set(scores))
+    # scores.sort()
+    # lowest_score = scores[1]
+    # lowest_students = []
+    # for name, score in students:
+    #     if score == lowest_score:
+    #         lowest_students.append(name)
+    
+    # lowest_students.sort()
+    
+    # for student in lowest_students:
+    #     print(student)
+
+#########################
+##                     ##
 ##   Merge the Tools   ##
 ##                     ##
 #########################
