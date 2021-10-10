@@ -160,14 +160,37 @@ print(solve('hello   123world'))
 #########################
 
 
-def solveMeal(meal_cost, tip_percent, tax_percent):
-    # Write your code here
+    # your code goes here
+def minion_game(string_word):
+
+  # exclude vowels
+  vowels = ['A', 'E', 'I', 'O', 'U']
+
+  # Integers to control scores 
+  stuart = 0
+  kevin = 0
+
+  # Iterate through the string
+  for i in range(len(string_word)):
+
+    print(string_word[i])
     
-    total = meal_cost + meal_cost/100*tip_percent + meal_cost/100*tax_percent
-    return round(total)
+    if string_word[i] in vowels:
+      kevin += len(string_word) - i
+      print(f'kevin {len(string_word) - i}')
 
-# meal_cost = 100
-# tip_percent = 12
-# tax_percent = 8
+    else:
+      stuart += len(string_word) - i
+      print(f'stuart {len(string_word) - i}')
 
-print(solveMeal(100, 15, 8))
+
+  # Winning points
+  if stuart > kevin:
+    print("Stuart" + ' ' + '%d' % stuart)
+  elif kevin > stuart:
+    print("Kevin" + ' ' + '%d' % kevin)
+  else:
+    print("Draw")
+
+
+minion_game('BANANA')
