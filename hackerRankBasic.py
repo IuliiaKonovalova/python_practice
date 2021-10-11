@@ -378,6 +378,37 @@ print("{0:.2f}".format(sum(student_scores)/(len(student_scores))))
 
 
 
+##############################
+##                          ##
+##  collections.Counter()   ##
+##                          ##
+##############################
+
+
+# from collections import Counter
+
+# number_of_shoes = int(input())
+# shoes = Counter(map(int, input().split()))
+# number_of_customer = int(input())
+
+# income = 0
+
+# for i in range(number_of_customer):
+#     size, price = map(int, input().split())
+#     if shoes[size]: 
+#         income += price
+#         shoes[size] -= 1
+
+# print(income)
+
+
+##############################
+##                          ##
+##  collections.Counter()   ##
+##                          ##
+##############################
+
+
 #########################
 ##                     ##
 ##   Merge the Tools   ##
