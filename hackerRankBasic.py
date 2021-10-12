@@ -434,6 +434,8 @@ print("{0:.2f}".format(sum(student_scores)/(len(student_scores))))
 ##################################
 
 from collections import namedtuple
+import numpy as np
+import pandas as pd
 
 Students = namedtuple('Students','ID MARKS NAME CLASS')
 st1 = Students(ID = 1, MARKS = 97, NAME = 'Raynond', CLASS = 7)
@@ -449,9 +451,36 @@ print(st1.ID)
 student_list = []
 table_columns = []
 
-for student in Students:
-  student_list.append(student)
-print(student_list)
+
+
+
+# data_length = 3 * 10**5
+# fake_data = {
+#     "id_code": list(range(data_length)),
+#     "letter_code": np.random.choice(list('abcdefgz'), size=data_length),
+#     "pine_cones": np.random.randint(low=1, high=100, size=data_length),
+#     "area": np.random.randint(low=1, high=100, size=data_length),
+#     "temperature": np.random.randint(low=1, high=100, size=data_length),
+#     "elevation": np.random.randint(low=1, high=100, size=data_length),}
+dictionary_students = pd.DataFrame(Students)
+print(dictionary_students)
+
+
+# def iter_with_idx():
+#     result_data = []
+    
+#     idx = {name: i for i, name in enumerate(list(df), start=1)}
+    
+#     for row in df.itertuples(name=None):
+        
+#         row_calc = row[idx['pine_cones']] / row[idx['area']]
+#         result_data.append(row_calc)
+        
+#     return result_data
+
+# for student in Students:
+#   student_list.append(student)
+# print(student_list)
 
 average_marks = 0
 n = 3
