@@ -62,3 +62,11 @@ class Person:
         global age
         self.age += 1
         # Increment the age of the person in here
+
+# Day 5
+
+    # n = int(input().strip())
+    n = 5
+    result = 0
+    for i in range(1, 11):
+        print(f'{n} x {i} = {n * i}')

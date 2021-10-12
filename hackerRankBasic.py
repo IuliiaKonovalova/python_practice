@@ -409,22 +409,55 @@ print("{0:.2f}".format(sum(student_scores)/(len(student_scores))))
 ##############################
 
 
-from collections import defaultdict
-d = defaultdict(list)
+# from collections import defaultdict
+# d = defaultdict(list)
 
 
-list1=[]
-n, m = map(int,input().split())
-for i in range(1, n+1):
-    d[input()].append(str(i))
+# list1=[]
+# n, m = map(int,input().split())
+# for i in range(1, n+1):
+#     d[input()].append(str(i))
 
 
-for i in range(m):
-    b = input()
-    if b in d: print(' '.join(d[b]))
-    else: print(-1)
+# for i in range(m):
+#     b = input()
+#     if b in d: print(' '.join(d[b]))
+#     else: print(-1)
 
 
+
+
+##################################
+##                              ##
+##   collections.namedtuple()   ##
+##                              ##
+##################################
+
+from collections import namedtuple
+
+Students = namedtuple('Students','ID MARKS NAME CLASS')
+st1 = Students(ID = 1, MARKS = 97, NAME = 'Raynond', CLASS = 7)
+st2 = Students(ID = 2, MARKS = 50, NAME = 'Steven', CLASS = 4)
+st3 = Students(ID = 3, MARKS = 91, NAME = 'Adrian', CLASS = 9)
+st4 = Students(ID = 4, MARKS = 72, NAME = 'Stewart', CLASS = 5)
+st5 = Students(ID = 5, MARKS = 80, NAME = 'Peter', CLASS = 6)
+st6 = Students(ID = 6, MARKS = 93, NAME = 'Kevin', CLASS = 3)
+
+print(st1)
+print(st1.ID)
+
+student_list = []
+table_columns = []
+
+for student in Students:
+  student_list.append(student)
+print(student_list)
+
+average_marks = 0
+n = 3
+# for st in range(n+1):
+#     average_marks += st.ID[table_columns.index('MARKS')]
+# print(average_marks/n)
 
 #########################
 ##                     ##
