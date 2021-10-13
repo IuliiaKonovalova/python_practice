@@ -602,6 +602,16 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 #         elif tasks_list[i][0] == 'reverse':
 #             solution_list.reverse()     
             
+# n = input()
+# l = []
+# for _ in range(n):
+#     s = input().split()
+#     cmd = s[0]
+#     args = s[1:]
+#     if cmd !="print":
+#       eval('arr.{0}{1}'.format(cmd,tuple(map(int,args))))
+#     else:
+#       print(l)
 
 ##################################
 ##                              ##
