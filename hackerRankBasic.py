@@ -569,6 +569,42 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 
 ##################################
 ##                              ##
-##      Collections.deque()     ##
+##             Lists            ##
+##                              ##
+##################################
+
+
+# if __name__ == '__main__':
+#     N = int(input())
+#     tasks_list = []
+#     solution_list = []
+    
+#     for i in range(N):
+#         tasks = input().split()
+#         tasks_list.append(tasks)
+        
+#     for i in range(len(tasks_list)):
+#         if tasks_list[i][0] == 'print':
+#             print(solution_list)
+#         elif tasks_list[i][0] == 'insert':
+#             index_in_task = int(tasks_list[i][1])
+#             number_in_task = int(tasks_list[i][2])
+#             solution_list.insert(index_in_task, number_in_task)
+#         elif tasks_list[i][0] == 'remove':
+#             solution_list.remove(int(tasks_list[i][1]))
+#         elif tasks_list[i][0] == 'append':
+#             solution_list.append(int(tasks_list[i][1]))
+#         elif tasks_list[i][0] == 'sort':
+#                solution_list.sort()
+#         elif tasks_list[i][0] == 'pop':
+#             solution_list.pop()
+#         elif tasks_list[i][0] == 'reverse':
+#             solution_list.reverse()     
+            
+
+
+##################################
+##                              ##
+##             Lists            ##
 ##                              ##
 ##################################
