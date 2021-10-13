@@ -434,8 +434,8 @@ print("{0:.2f}".format(sum(student_scores)/(len(student_scores))))
 ##################################
 
 from collections import namedtuple
-import numpy as np
-import pandas as pd
+# import numpy as np
+# import pandas as pd
 
 Students = namedtuple('Students','ID MARKS NAME CLASS')
 st1 = Students(ID = 1, MARKS = 97, NAME = 'Raynond', CLASS = 7)
@@ -462,8 +462,8 @@ table_columns = []
 #     "area": np.random.randint(low=1, high=100, size=data_length),
 #     "temperature": np.random.randint(low=1, high=100, size=data_length),
 #     "elevation": np.random.randint(low=1, high=100, size=data_length),}
-dictionary_students = pd.DataFrame(Students)
-print(dictionary_students)
+# dictionary_students = pd.DataFrame(Students)
+# print(dictionary_students)
 
 
 # def iter_with_idx():
@@ -489,10 +489,54 @@ n = 3
 # print(average_marks/n)
 
 
-#########################
-##                     ##
-##   Merge the Tools   ##
-##                     ##
-#########################
+##################################
+##                              ##
+##  Collections.OrderedDict()   ##
+##                              ##
+##################################
 
 
+# from collections import OrderedDict
+# d = OrderedDict()
+# print(d)
+# for _ in range(int(input())):
+#     item, space, quantity = input().rpartition(' ')
+#     d[item] = d.get(item, 0) + int(quantity)
+# for item, quantity in d.items():
+#     print(item, quantity)
+
+
+
+##################################
+##                              ##
+##           Word Order         ##
+##                              ##
+##################################
+
+
+from collections import Counter, OrderedDict
+
+class OrderedCounter(Counter, OrderedDict):
+  """
+  Counter that remembers the order elements are first seen
+  """
+  def __repr__(self):
+    return '%s(%r)' % (self.__class__.__name__, OrderedDict(self))
+  def __reduce__(self):
+    return self.__class__, (OrderedDict(self),)
+
+
+oc = OrderedCounter('adddddbracadabra')
+
+print(oc)
+
+OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
+
+# from collections import Counter, OrderedDict
+
+# class OrderedCounter(Counter, OrderedDict):
+#     pass
+
+# words_dictionary = OrderedCounter(input() for _ in range(int(input())))
+# print(len(words_dictionary))
+# print(*words_dictionary.values())
