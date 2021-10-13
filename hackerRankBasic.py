@@ -573,7 +573,6 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 ##                              ##
 ##################################
 
-
 # if __name__ == '__main__':
 #     N = int(input())
 #     tasks_list = []
@@ -597,11 +596,12 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 #         elif tasks_list[i][0] == 'sort':
 #                solution_list.sort()
 #         elif tasks_list[i][0] == 'pop':
+#             if len(tasks_list[i]) > 1:
+#                solution_list.pop(int(tasks_list[i][1])) 
 #             solution_list.pop()
 #         elif tasks_list[i][0] == 'reverse':
 #             solution_list.reverse()     
             
-
 
 ##################################
 ##                              ##
