@@ -615,6 +615,17 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 
 ##################################
 ##                              ##
-##             Lists            ##
+##            Tuples            ##
+##                              ##
+##################################
+
+# if __name__ == '__main__':
+#     n = int(input())
+#     integer_list = tuple(map(int, input().split()))
+#     print(hash(integer_list))
+
+##################################
+##                              ##
+##            Tuples            ##
 ##                              ##
 ##################################
