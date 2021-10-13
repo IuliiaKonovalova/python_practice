@@ -626,6 +626,20 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 
 ##################################
 ##                              ##
-##            Tuples            ##
+##   itertools.permutations()   ##
+##                              ##
+##################################
+
+
+from itertools import permutations
+
+word, number = input().split()
+print(*[''.join(i) for i in permutations(sorted(word), int(number))], sep = '\n')
+
+
+
+##################################
+##                              ##
+##   itertools.permutations()   ##
 ##                              ##
 ##################################
