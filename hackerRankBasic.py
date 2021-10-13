@@ -540,3 +540,15 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 # words_dictionary = OrderedCounter(input() for _ in range(int(input())))
 # print(len(words_dictionary))
 # print(*words_dictionary.values())
+
+words_for_split = [2, 'Hacker', 'Rank']
+words_for_split2 = ['Hacker', 'Rank']
+break_in_word = int(words_for_split.pop(0))
+first_word = words_for_split.pop(0)
+second_word = words_for_split.pop()
+print(break_in_word)
+print(*["".join(first_word[::2]),"".join(first_word[1::2])])
+print(*["".join(second_word[::2]),"".join(second_word[1::2])])
+for i in words_for_split2:
+  # words_for_split2 = ['Hacker', 'Rank']
+  print(*["".join(i[::2]),"".join(i[1::2])])

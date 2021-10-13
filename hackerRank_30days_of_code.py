@@ -70,3 +70,30 @@ class Person:
     result = 0
     for i in range(1, 11):
         print(f'{n} x {i} = {n * i}')
+
+
+# Day 6
+
+
+# for i in range(int(input())):
+#     s=input()
+#     print(*["".join(s[::2]),"".join(s[1::2])])
+
+words_for_split = [5, 'Hacker', 'Rank']
+
+for i in range(words_for_split[0]):
+    print(*["".join(words_for_split[::2]),"".join(words_for_split[1::2])])
+
+words_for_split = [2, 'Hacker', 'Rank']
+words_for_split2 = ['Hacker', 'Rank']
+break_in_word = int(words_for_split.pop(0))
+first_word = words_for_split.pop(0)
+second_word = words_for_split.pop()
+print(break_in_word)
+print(*["".join(first_word[::2]),"".join(first_word[1::2])])
+print(*["".join(second_word[::2]),"".join(second_word[1::2])])
+
+
+for i in words_for_split2:
+  # words_for_split2 = ['Hacker', 'Rank']
+  print(*["".join(i[::2]),"".join(i[1::2])])
