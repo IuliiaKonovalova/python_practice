@@ -651,3 +651,20 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 # for i in range(1, int(number) + 1):
 #     for j in combinations(sorted(word), i):
 #         print(''.join(j))
+
+
+
+
+
+###################################################
+##                                               ##
+##   itertools.combinations_with_replacement()   ##
+##                                               ##
+###################################################
+
+
+# from itertools import combinations_with_replacement
+
+# word, number = input().split()
+
+# print(*[''.join(i) for i in combinations_with_replacement(sorted(word), int(number))], sep = '\n')
