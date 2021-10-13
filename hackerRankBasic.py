@@ -541,14 +541,34 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 # print(len(words_dictionary))
 # print(*words_dictionary.values())
 
-words_for_split = [2, 'Hacker', 'Rank']
-words_for_split2 = ['Hacker', 'Rank']
-break_in_word = int(words_for_split.pop(0))
-first_word = words_for_split.pop(0)
-second_word = words_for_split.pop()
-print(break_in_word)
-print(*["".join(first_word[::2]),"".join(first_word[1::2])])
-print(*["".join(second_word[::2]),"".join(second_word[1::2])])
-for i in words_for_split2:
-  # words_for_split2 = ['Hacker', 'Rank']
-  print(*["".join(i[::2]),"".join(i[1::2])])
+
+
+##################################
+##                              ##
+##      Collections.deque()     ##
+##                              ##
+##################################
+
+# from collections import deque
+
+# dueque_to_work_with = deque()
+# for _ in range(int(input())):
+#     input_to_work_on, *args = input().split()
+#     getattr(dueque_to_work_with, input_to_work_on)(*args)
+# [print(x, end=' ') for x in d]
+
+
+# dueque_to_work_with = deque()
+
+# for _ in range(int(input())):
+#     input_to_work_on = input().split()
+#     getattr(dueque_to_work_with, input_to_work_on[0])(*[input_to_work_on[1]] if len(input_to_work_on) > 1 else [])
+    
+# print(*[item for item in dueque_to_work_with])
+
+
+##################################
+##                              ##
+##      Collections.deque()     ##
+##                              ##
+##################################
