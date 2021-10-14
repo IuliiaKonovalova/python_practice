@@ -748,3 +748,17 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 #     for el in arr:
 #           # unpacking
 #         print(*el)
+
+
+
+###################################################
+##                                               ##
+##                 Any or all                    ##
+##                                               ##
+###################################################
+
+# amount_of_numbers = input()
+
+# numbers = list(map(int, input().split()))
+
+# print(all([any([str(element) == str(element)[::-1] for element in numbers]), any([int(element) > 0 for element in numbers])]))
