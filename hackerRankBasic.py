@@ -668,3 +668,18 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 # word, number = input().split()
 
 # print(*[''.join(i) for i in combinations_with_replacement(sorted(word), int(number))], sep = '\n')
+
+
+###################################################
+##                                               ##
+##                 Linear algebra                ##
+##                                               ##
+###################################################
+
+# import numpy
+
+# number = int(input())
+
+# list_of_num = numpy.array([input().split() for _ in range(number)], float)
+# numpy.set_printoptions(legacy = '1.13')
+# print(numpy.linalg.det(list_of_num))
