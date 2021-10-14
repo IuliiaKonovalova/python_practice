@@ -717,6 +717,34 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 
 ###################################################
 ##                                               ##
-##                 Eval()                        ##
+##                 Athlete Sort                  ##
 ##                                               ##
 ###################################################
+
+
+# import math
+# import os
+# import random
+# import re
+# import sys
+
+
+
+# if __name__ == '__main__':
+#     n, m = list(map(int, input().split()))
+
+    
+#     arr = []
+
+#     for _ in range(n):
+#         arr.append(list(map(int, input().split())))
+
+#     k = int(input())
+    
+#     # sorting for the index 
+#     arr.sort(key=lambda x: x[k])
+    
+
+#     for el in arr:
+#           # unpacking
+#         print(*el)
