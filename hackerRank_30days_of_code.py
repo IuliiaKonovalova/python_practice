@@ -97,3 +97,24 @@ print(*["".join(second_word[::2]),"".join(second_word[1::2])])
 for i in words_for_split2:
   # words_for_split2 = ['Hacker', 'Rank']
   print(*["".join(i[::2]),"".join(i[1::2])])
+
+
+#  Day 7
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+    
+    print(' '.join(map(str, arr[::-1])))
+    
+
+        
