@@ -683,3 +683,17 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 # list_of_num = numpy.array([input().split() for _ in range(number)], float)
 # numpy.set_printoptions(legacy = '1.13')
 # print(numpy.linalg.det(list_of_num))
+
+
+
+###################################################
+##                                               ##
+##                 Inputs                        ##
+##                                               ##
+###################################################
+
+# numbers = input().split()
+# x = int(numbers[0])
+
+# if x**3 + x**2 + x + 1 == int(numbers[1]):
+#     print(True)
