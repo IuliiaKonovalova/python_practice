@@ -697,3 +697,10 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 
 # if x**3 + x**2 + x + 1 == int(numbers[1]):
 #     print(True)
+
+
+
+# numbers = input().split()
+# x = int(numbers[0])
+
+# print(eval(input()) == int(numbers[1]))
