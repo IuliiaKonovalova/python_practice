@@ -118,3 +118,20 @@ if __name__ == '__main__':
     
 
         
+#  Day 8
+
+number_of_contacts = int(input())
+dic = {}
+for _ in range(number_of_contacts):
+    name, number = input().split()
+    dic[name] = number
+
+queries = []
+for _ in range(number_of_contacts):
+    queries.append(input())
+    
+for query in queries:
+    if query in dic.keys():
+        print(query + "=" + dic[query])
+    else:
+        print("Not found")
