@@ -851,3 +851,15 @@ print(result)
 def print_full_name(first, last):
     # Write your code here
     print(f'Hello {first} {last}! You just delved into python.')
+
+
+###################################################
+##                                               ##
+##                     Mutations                 ##
+##                                               ##
+###################################################
+
+def mutate_string(string, position, character):
+  string_to_list = list(string)
+  string_to_list[position] = character
+  return ''.join(string_to_list)
