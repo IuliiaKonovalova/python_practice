@@ -863,3 +863,19 @@ def mutate_string(string, position, character):
   string_to_list = list(string)
   string_to_list[position] = character
   return ''.join(string_to_list)
+
+###################################################
+##                                               ##
+##                Find a string                  ##
+##                                               ##
+###################################################
+
+
+def count_substring(string, sub_string):
+  count_sub_strings = 0
+  length_of_sub_string = len(sub_string)
+  for i in range(len(string)):
+    new_strings = string[i:i + length_of_sub_string]
+    if new_strings == sub_string:
+      count_sub_strings += 1
+  return count_sub_strings
