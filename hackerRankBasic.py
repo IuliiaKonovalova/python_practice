@@ -953,3 +953,15 @@ string1 = 'AABCAAADA'
 k1 = 3
 
 result_of_merging = merge_the_tools(string1, k1)
+
+###################################################
+##                                               ##
+##            Introduction to Sets               ##
+##                                               ##
+###################################################
+
+def average(array):
+    # your code goes here
+    
+    array_to_set = set(array)
+    return sum(array_to_set)/len(array_to_set)
