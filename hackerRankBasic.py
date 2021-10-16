@@ -839,3 +839,15 @@ def split_and_join(line):
 line1 = 'this is a string'
 result = split_and_join(line1)
 print(result)
+
+
+###################################################
+##                                               ##
+##            What's Your Name?                  ##
+##                                               ##
+###################################################
+
+
+def print_full_name(first, last):
+    # Write your code here
+    print(f'Hello {first} {last}! You just delved into python.')
