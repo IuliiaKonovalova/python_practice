@@ -965,3 +965,26 @@ def average(array):
     
     array_to_set = set(array)
     return sum(array_to_set)/len(array_to_set)
+
+
+###################################################
+##                                               ##
+##            Symmetric Difference               ##
+##                                               ##
+###################################################
+
+
+# a, b = [set(input().split()) for _ in range(4)][1::2]
+
+# a_difference = a.difference(b)
+# b_difference = b.difference(a)
+
+# a_b_union_difference = a_difference.union(b_difference)
+# print('\n'.join(sorted(list(a_b_union_difference), key = int)))
+
+
+###################################################
+##                                               ##
+##                       Set.add()               ##
+##                                               ##
+###################################################
