@@ -825,3 +825,17 @@ def swap_case(s):
 s = 'HackerRank.com presents "Pythonist 2".'
 result = swap_case(s)
 print(result)
+
+
+###################################################
+##                                               ##
+##            String Split and Join              ##
+##                                               ##
+###################################################
+
+def split_and_join(line):
+  return '-'.join(line.split(' '))
+
+line1 = 'this is a string'
+result = split_and_join(line1)
+print(result)
