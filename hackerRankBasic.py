@@ -772,3 +772,33 @@ OrderedCounter(OrderedDict([('a', 5), ('d', 6), ('b', 2), ('r', 2), ('c', 1)]))
 word = "bananana"
 i = word.find("ana")
 print(i)
+
+
+###################################################
+##                                               ##
+##                  ginortS                      ##
+##                                               ##
+###################################################
+
+
+x = sorted('Sorting1234')
+print(x)
+
+initial_input = 'Sorting1234'
+initial_input = sorted(initial_input)
+
+upper = ''
+lower = ''
+even = ''
+odds = ''
+
+for i in initial_input:
+  if i.islower():
+    lower += i
+  elif i.isupper():
+    upper += i
+  elif int(i) % 2 == 0:
+    even += i
+  elif int(i) % 2 != 0:
+    odds += i
+print(lower + upper + odds + even) 
