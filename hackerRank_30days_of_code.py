@@ -126,12 +126,13 @@ for _ in range(number_of_contacts):
     name, number = input().split()
     dic[name] = number
 
-queries = []
-for _ in range(number_of_contacts):
-    queries.append(input())
-    
-for query in queries:
-    if query in dic.keys():
-        print(query + "=" + dic[query])
-    else:
-        print("Not found")
+while True: 
+    try:
+        name = input()
+        if name in dic.keys():
+            
+            print(name + "=" + dic[name])
+        else:
+            print("Not found")
+    except EOFError:
+        break
