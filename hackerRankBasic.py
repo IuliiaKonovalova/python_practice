@@ -802,3 +802,26 @@ for i in initial_input:
   elif int(i) % 2 != 0:
     odds += i
 print(lower + upper + odds + even) 
+
+
+
+
+###################################################
+##                                               ##
+##                  sWAP cASE                    ##
+##                                               ##
+###################################################
+
+def swap_case(s):
+  new_string = ''
+  for character in s:
+    if character.isupper():
+      character = character.lower()
+    else:
+      character = character.upper()
+    new_string += ''.join(character)
+  return new_string
+
+s = 'HackerRank.com presents "Pythonist 2".'
+result = swap_case(s)
+print(result)
