@@ -136,3 +136,13 @@ while True:
             print("Not found")
     except EOFError:
         break
+
+
+# Day 9
+
+def factorial(n):
+    
+    if n <= 1:
+        return 1
+    else:
+        return n * factorial(n-1)
