@@ -898,3 +898,58 @@ def count_substring(string, sub_string):
 #     print(any(i.isdigit() for i in s))
 #     print(any(i.islower() for i in s))
 #     print(any(i.isupper() for i in s))
+
+
+###################################################
+##                                               ##
+##                text alignment                 ##
+##                                               ##
+###################################################
+
+
+# thickness = int(input()) #This must be an odd number
+# c = 'H'
+
+# #Top Cone
+# for i in range(thickness):
+#     print((c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1))
+
+# #Top Pillars
+# for i in range(thickness+1):
+#     print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
+
+# #Middle Belt
+# for i in range((thickness+1)//2):
+#     print((c*thickness*5).center(thickness*6))    
+
+# #Bottom Pillars
+# for i in range(thickness+1):
+#     print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))    
+
+# #Bottom Cone
+# for i in range(thickness):
+#     print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
+
+
+
+###################################################
+##                                               ##
+##                Merge the tools!               ##
+##                                               ##
+###################################################
+string1 = 'AABCAAADA'
+k1 = 3
+def merge_the_tools(string, k):
+  new_string = ''
+
+  for i in range(0, len(string), k):
+    for letter in string[i:i+k]:
+      if letter not in new_string:
+        new_string = new_string + letter
+    print(new_string)
+    new_string = ''
+
+string1 = 'AABCAAADA'
+k1 = 3
+
+result_of_merging = merge_the_tools(string1, k1)
