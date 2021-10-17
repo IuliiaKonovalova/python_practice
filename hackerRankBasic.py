@@ -1205,9 +1205,17 @@ def average(array):
 
 ###################################################
 ##                                               ##
-##              Transpose and Flatten            ##
+##                    concatenate                ##
 ##                                               ##
 ###################################################
 
 
+
+# import numpy
+
+# n, m, p = map(int, input().split())
+# my_numpy_array1 = numpy.array([input().split() for _ in range(n)], int)
+# my_numpy_array2 = numpy.array([input().split() for _ in range(m)], int)
+
+# print(numpy.concatenate((my_numpy_array1, my_numpy_array2), axis = 0))
 
