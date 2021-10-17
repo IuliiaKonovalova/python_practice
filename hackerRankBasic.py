@@ -1006,17 +1006,32 @@ def average(array):
 ###################################################
 
 
-num = int(input())
-data = set(map(int, input().split()))
-operations = int(input())
+# num = int(input())
+# data = set(map(int, input().split()))
+# operations = int(input())
 
-for x in range(operations):
-  operation = input().split()
-  if operation[0] == "remove":
-    data.remove(int(operation[1]))
-  elif operation[0] == "discard":
-    data.discard(int(operation[1]))
-  else:
-    data.pop()
+# for x in range(operations):
+#   operation = input().split()
+#   if operation[0] == "remove":
+#     data.remove(int(operation[1]))
+#   elif operation[0] == "discard":
+#     data.discard(int(operation[1]))
+#   else:
+#     data.pop()
     
-print(sum(data))
+# print(sum(data))
+
+
+###################################################
+##                                               ##
+##                   Set.union()                 ##
+##                                               ##
+###################################################
+
+
+number1 = int(input())
+english_newspaper = list(input().split())
+number2 = int(input())
+french_newspaper = list(input().split())
+
+print(len(set(english_newspaper).union(set(french_newspaper))))
