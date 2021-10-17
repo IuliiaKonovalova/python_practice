@@ -1029,9 +1029,24 @@ def average(array):
 ###################################################
 
 
-number1 = int(input())
-english_newspaper = list(input().split())
-number2 = int(input())
-french_newspaper = list(input().split())
+# number1 = int(input())
+# english_newspaper = list(input().split())
+# number2 = int(input())
+# french_newspaper = list(input().split())
 
-print(len(set(english_newspaper).union(set(french_newspaper))))
+# print(len(set(english_newspaper).union(set(french_newspaper))))
+
+
+###################################################
+##                                               ##
+##          Set .intersection() Operation        ##
+##                                               ##
+###################################################
+
+
+# number1 = int(input())
+# english_newspaper = list(input().split())
+# number2 = int(input())
+# french_newspaper = list(input().split())
+
+# print(len(set(english_newspaper).intersection(set(french_newspaper))))
