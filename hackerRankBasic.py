@@ -1050,3 +1050,24 @@ def average(array):
 # french_newspaper = list(input().split())
 
 # print(len(set(english_newspaper).intersection(set(french_newspaper))))
+
+
+###################################################
+##                                               ##
+##          Set .difference () Operation         ##
+##                                               ##
+###################################################
+
+
+# number1 = int(input())
+# english_newspaper = list(input().split())
+# number2 = int(input())
+# french_newspaper = list(input().split())
+
+# print(len(set(english_newspaper).difference(set(french_newspaper))))
+
+###################################################
+##                                               ##
+##   Set .symmetric_difference () Operation      ##
+##                                               ##
+###################################################
