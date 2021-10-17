@@ -1071,3 +1071,11 @@ def average(array):
 ##   Set .symmetric_difference () Operation      ##
 ##                                               ##
 ###################################################
+
+
+# number1 = int(input())
+# english_newspaper = list(input().split())
+# number2 = int(input())
+# french_newspaper = list(input().split())
+
+# print(len(set(english_newspaper).symmetric_difference(set(french_newspaper))))
