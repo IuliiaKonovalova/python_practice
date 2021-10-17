@@ -146,3 +146,23 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
+
+
+# Day 10
+
+if __name__ == '__main__':
+    n = int(input().strip())
+current_consecutive_ls = 0
+
+max_consecutive_ls = 0
+
+while n > 0:
+    remainder = n % 2
+    if remainder == 1:
+        current_consecutive_ls += 1
+        if current_consecutive_ls > max_consecutive_ls:
+            max_consecutive_ls = current_consecutive_ls
+    else:
+        current_consecutive_ls = 0
+    n = n // 2
+print(max_consecutive_ls)
