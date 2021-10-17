@@ -1099,3 +1099,18 @@ def average(array):
 #         getattr(A, command)(newSet)
 
 #     print (sum(A))
+
+
+###################################################
+##                                               ##
+##               The Captian's Room              ##
+##                                               ##
+###################################################
+
+
+
+# k,arr = int(input()),list(map(int, input().split()))
+
+# my_set = set(arr)
+
+# print(((sum(my_set)*k)-(sum(arr)))//(k-1))
