@@ -1133,6 +1133,28 @@ def average(array):
 
 ###################################################
 ##                                               ##
-##                   Check Subset                ##
+##               Check Strict Superset           ##
+##                                               ##
+###################################################
+
+
+# def is_strict_superset(a,b):
+    
+#     return b.issubset(a) and not(a.issubset(b))
+
+# a = set(int(x) for x in input().split(' '))
+# n = int(input())
+# result = True
+
+# for _ in range(n):
+#     b = set(int(x) for x in input().split(' '))
+#     result &= is_strict_superset(a,b)
+    
+# print(result)
+
+
+###################################################
+##                                               ##
+##               Check Strict Superset           ##
 ##                                               ##
 ###################################################
