@@ -1180,3 +1180,34 @@ def average(array):
 #     # complete this function
 #     # use numpy.array
 #     return numpy.array(arr[::-1], float)
+
+
+
+
+###################################################
+##                                               ##
+##              Transpose and Flatten            ##
+##                                               ##
+###################################################
+
+
+# import numpy
+
+
+
+# n, m = map(int, input().split())
+# array = numpy.array([input().split() for _ in range(n)], int)
+
+# print (array.transpose())
+# print (array.flatten())
+
+
+
+###################################################
+##                                               ##
+##              Transpose and Flatten            ##
+##                                               ##
+###################################################
+
+
+
