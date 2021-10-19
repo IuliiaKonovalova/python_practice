@@ -1219,3 +1219,24 @@ def average(array):
 
 # print(numpy.concatenate((my_numpy_array1, my_numpy_array2), axis = 0))
 
+###################################################
+##                                               ##
+##                 zeros and ones                ##
+##                                               ##
+###################################################
+
+# import numpy 
+
+# numbers = tuple(map(int, input().split()))
+
+# print(numpy.zeros(numbers, dtype = numpy.int))
+
+# print(numpy.ones(numbers, dtype = numpy.int))
+
+
+
+###################################################
+##                                               ##
+##                 Eye and Identity              ##
+##                                               ##
+###################################################
