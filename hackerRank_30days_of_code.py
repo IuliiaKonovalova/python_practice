@@ -196,3 +196,53 @@ for i in range(1,5):
             max_hourglass_sum = current_hourglass_sum
 
 print(max_hourglass_sum)
+
+
+# Day 12
+
+class Person:
+	def __init__(self, firstName, lastName, idNumber):
+		self.firstName = firstName
+		self.lastName = lastName
+		self.idNumber = idNumber
+	def printPerson(self):
+		print("Name:", self.lastName + ",", self.firstName)
+		print("ID:", self.idNumber)
+
+class Student(Person):
+    #   Class Constructor
+    # Write your constructor here
+    def __init__(self, firstName, lastName, idNum):
+        Person.__init__(self, firstName, lastName, idNum)
+        self.scores = scores
+        
+    # Write your function here
+    
+    def calculate(self):
+        sum_of_scores = 0
+        for score in scores:
+            sum_of_scores += score
+        average_scores = sum_of_scores / len(scores)
+        if average_scores < 40:
+            return 'T'
+        elif average_scores < 50:
+            return 'D'
+        elif average_scores < 70:
+            return 'P'
+        elif average_scores < 80:
+            return 'A'
+        elif average_scores < 90:
+            return 'E'
+        else:
+            return 'O'
+
+            
+line = input().split()
+firstName = line[0]
+lastName = line[1]
+idNum = line[2]
+numScores = int(input()) # not needed for Python
+scores = list( map(int, input().split()) )
+s = Student(firstName, lastName, idNum, scores)
+s.printPerson()
+print("Grade:", s.calculate())
