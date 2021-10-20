@@ -1265,3 +1265,37 @@ def average(array):
 ###################################################
 
 # print(str(numpy.eye(*map(int,input().split()))).replace('1',' 1').replace('0',' 0'))
+
+
+###################################################
+##                                               ##
+##                 Array Mathematics             ##
+##                                               ##
+###################################################
+
+
+# import numpy
+
+# n, m = map(int, input().split())
+
+# first_array, second_array = (numpy.array([input().split() for _ in range(n)], dtype=int) for _ in range(2))
+
+
+
+# # print(first_array)
+# # print(second_array)
+
+# print(numpy.add(first_array, second_array))
+# print(numpy.subtract(first_array, second_array))
+# print(numpy.multiply(first_array, second_array))
+# print(numpy.floor_divide(first_array, second_array))
+# print(numpy.mod(first_array, second_array))
+# print(numpy.power(first_array, second_array))
+
+
+
+###################################################
+##                                               ##
+##                 Array Mathematics             ##
+##                                               ##
+###################################################
