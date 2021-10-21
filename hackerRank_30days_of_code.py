@@ -249,7 +249,7 @@ print("Grade:", s.calculate())
 
 
 
-# Day 12
+# Day 13
 
 from abc import ABCMeta, abstractmethod
 class Book(object, metaclass=ABCMeta):
@@ -274,3 +274,33 @@ author=input()
 price=int(input())
 new_novel=MyBook(title,author,price)
 new_novel.display()
+
+# Day 14
+
+# class Difference:
+#     def __init__(self, a):
+#         self.__elements = a
+#         self.maximumDifference = 0
+#     def computeDifference(self):
+#         set_of_elements = sorted(self.__elements)
+#         min_element = 101
+#         max_element = 0
+#         for element in set_of_elements:
+#             if element < min_element:
+#                 min_element = element
+#             elif element > max_element:
+#                 max_element = element
+#             else:
+#                 pass
+#         self.maximumDifference = max_element - min_element
+# 	# Add your code here
+
+# # End of Difference class
+
+# _ = input()
+# a = [int(e) for e in input().split(' ')]
+
+# d = Difference(a)
+# d.computeDifference()
+
+# print(d.maximumDifference)
