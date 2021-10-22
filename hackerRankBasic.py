@@ -1301,12 +1301,27 @@ def average(array):
 ###################################################
 
 
-import numpy
+# import numpy
 
-numpy.set_printoptions(sign=' ')
+# numpy.set_printoptions(sign=' ')
 
-a = numpy.array(input().split(),float)
+# a = numpy.array(input().split(),float)
 
-print(numpy.floor(a))
-print(numpy.ceil(a))
-print(numpy.rint(a))
+# print(numpy.floor(a))
+# print(numpy.ceil(a))
+# print(numpy.rint(a))
+
+
+###################################################
+##                                               ##
+##                  sum and prod                 ##
+##                                               ##
+###################################################
+
+
+
+# import numpy
+
+# n, m = map(int, input().split())
+# A = numpy.array([input().split() for _ in range(n)],int)
+# print(numpy.prod(numpy.sum(A, axis=0), axis=0))
