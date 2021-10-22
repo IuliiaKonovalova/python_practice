@@ -1325,3 +1325,19 @@ def average(array):
 # n, m = map(int, input().split())
 # A = numpy.array([input().split() for _ in range(n)],int)
 # print(numpy.prod(numpy.sum(A, axis=0), axis=0))
+
+
+###################################################
+##                                               ##
+##                  min and max                  ##
+##                                               ##
+###################################################
+
+
+# n, m = map(int,input().split())
+
+# list_to_change = [list(map(int,input().split())) for i in range(n)]
+
+# array_to_work_on = numpy.array(list_to_change)
+
+# print(max(numpy.min(array_to_work_on, axis = 1)))
