@@ -1341,3 +1341,23 @@ def average(array):
 # array_to_work_on = numpy.array(list_to_change)
 
 # print(max(numpy.min(array_to_work_on, axis = 1)))
+
+
+
+
+###################################################
+##                                               ##
+##              Mean, Var, and St                ##
+##                                               ##
+###################################################
+
+
+
+# import numpy
+# array = []
+# n, m = map(int, input().split())
+# for _ in range(n): array.append(list(map(int, input().split())))
+# array = numpy.array(array)
+# print(numpy.mean(array, axis=1))
+# print(numpy.var(array, axis=0))
+# print(round(numpy.std(array), 11))
