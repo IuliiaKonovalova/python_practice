@@ -1386,4 +1386,20 @@ def average(array):
 ##                Dot and cross                  ##
 ##                                               ##
 ###################################################
-x
+
+
+# number = int(input())
+
+# first_array = numpy.array([input().split() for _ in range(number)], int)
+# second_array = numpy.array([input().split() for _ in range(number)], int)
+
+# # print(first_array)
+# # print(second_array)
+# print(numpy.dot(first_array, second_array))
+
+
+###################################################
+##                                               ##
+##              Inner and outer                  ##
+##                                               ##
+###################################################
