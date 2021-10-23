@@ -62,11 +62,28 @@ for i in range(N-2, -1, -2):
 
 
 
+height = 7
+length = 21
+
+# Upper part of the mat
+print('*' * length)
+for i in range(1, height, 2):
+    print((i * (' ')).center(length, '*'))
+
+# Middle of the mat
+print("     ".upper().center(length, '*'))
+
+# Lower part of the mat
+for i in range(height-2, -1, -2):
+    print((i * (' ')).center(length, '*'))
+print('*' * length)
 
 
 
 # Prints "--HELLO--". 
 print("HELLO".center(9, "-"))
+
+print()
 
 
 
@@ -1361,3 +1378,12 @@ def average(array):
 # print(numpy.mean(array, axis=1))
 # print(numpy.var(array, axis=0))
 # print(round(numpy.std(array), 11))
+
+
+
+###################################################
+##                                               ##
+##                Dot and cross                  ##
+##                                               ##
+###################################################
+x
