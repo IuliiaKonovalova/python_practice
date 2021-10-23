@@ -1403,3 +1403,17 @@ def average(array):
 ##              Inner and outer                  ##
 ##                                               ##
 ###################################################
+
+
+# first_array = numpy.array(input().split(), int)
+# second_array = numpy.array(input().split(), int)
+
+# print(numpy.inner(first_array, second_array))
+# print(numpy.outer(first_array, second_array))
+
+
+###################################################
+##                                               ##
+##                Polynomials                    ##
+##                                               ##
+###################################################
