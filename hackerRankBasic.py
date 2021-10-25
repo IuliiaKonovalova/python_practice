@@ -1478,6 +1478,20 @@ def average(array):
 # second_tuple = list(map(int, input().split()))
 
 
-
-
 # print(*product(first_tuple, second_tuple))
+
+
+
+###################################################
+##                                               ##
+##             Compress the String!              ##
+##                                               ##
+###################################################
+
+
+
+
+from itertools import groupby
+
+for key, group in groupby('1222311'):
+    print('({}, {})'.format(len(list(group)), key), end=" ")
