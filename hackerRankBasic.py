@@ -1495,3 +1495,28 @@ from itertools import groupby
 
 for key, group in groupby('1222311'):
     print('({}, {})'.format(len(list(group)), key), end=" ")
+
+
+###################################################
+##                                               ##
+##            Iterables and Iterators            ##
+##                                               ##
+###################################################
+
+
+from itertools import combinations
+
+length_of_the_list = int(input())
+letters = input().split()
+probability = int(input())
+
+C = list(combinations(letters, probability))
+F = filter(lambda c: 'a' in c, C)
+print("{0:.3}".format(len(list(F))/len(C)))
+
+
+###################################################
+##                                               ##
+##            Iterables and Iterators            ##
+##                                               ##
+###################################################
