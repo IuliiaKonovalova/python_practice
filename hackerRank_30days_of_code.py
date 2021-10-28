@@ -445,3 +445,36 @@ my_calculator = Calculator()
 s = my_calculator.divisorSum(n)
 print("I implemented: " + type(my_calculator).__bases__[0].__name__)
 print(s)
+
+
+# Day 20: Sorting
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    a = list(map(int, input().rstrip().split()))
+
+    # Write your code here
+    total_number_of_swaps = 0
+    for i in range(n):
+        number_of_swaps = 0
+        for j in range (n - 1):
+            if a[j] > a[j + 1]:
+                tmp = a[j]
+                a[j] = a[j + 1]
+                a[j + 1] = tmp
+                number_of_swaps += 1
+        total_number_of_swaps += number_of_swaps
+        if number_of_swaps == 0:
+            break
+print(f'Array is sorted in {total_number_of_swaps} swaps.\nFirst Element: {a[0]}\nLast Element: {a[-1]}')
