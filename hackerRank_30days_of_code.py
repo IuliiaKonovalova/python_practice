@@ -478,3 +478,13 @@ if __name__ == '__main__':
         if number_of_swaps == 0:
             break
 print(f'Array is sorted in {total_number_of_swaps} swaps.\nFirst Element: {a[0]}\nLast Element: {a[-1]}')
+
+# Day 21 (Java 8)
+
+    # public void printArray(T[] elements) {
+    #     for (T element : elements) {
+    #         System.out.println(element);
+    #     }
+    # }
+
+    # Day 22
