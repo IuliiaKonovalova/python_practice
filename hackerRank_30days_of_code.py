@@ -617,3 +617,35 @@ mylist.display(head);
 
 
 # Day 25: Running Time and Complexity
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import math
+
+def is_prime(number):
+    if number <= 1:
+        return False
+    sqrt_number = math.sqrt(number)
+    if sqrt_number.is_integer():
+        return False
+    for i in range(2, int(sqrt_number) + 1):
+        if number % i == 0:
+            return False
+    return True
+
+# def is_prime(number):
+#     if number <= 1:
+#         return False
+#     for i in range(2, number):
+#         if number % i == 0:
+#             return False
+#     return True
+
+number_of_tests = int(input())
+
+for i in range(number_of_tests):
+    n = int(input())
+    if is_prime(n):
+        print('Prime')
+    else:
+        print('Not prime')
