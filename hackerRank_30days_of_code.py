@@ -759,7 +759,7 @@ import sys
 if __name__ == '__main__':
     N = int(input().strip())
     first_name_list = []
-    pattern = r"@gmail\.com"
+    pattern = r"@gmail\.com$"
     regex = re.compile(pattern)
     for N_itr in range(N):
         first_multiple_input = input().rstrip().split()
